@@ -1,4 +1,5 @@
-var intervalID1 = window.setInterval(getcurrentsong, 1000);
+var intervalID1 = window.setInterval(getcurrentsong, 2000);
+
 function getcurrentsong() {
 $.ajax({
   type: "GET",
@@ -45,8 +46,8 @@ $.ajax({
     
     artworkID.innerHTML = '<img src=' +'https://img.icons8.com/ios-glyphs/240/000000/apple-music.png' + '>' ;
     track.textContent = ' Not listening to anything';
-   artist.textContent = ''; 
-   listen.textContent = ''; 
+    artist.textContent = ''; 
+    listen.textContent = ''; 
   },
   dataType: "json"
 });
